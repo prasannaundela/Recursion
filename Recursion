@@ -34,6 +34,68 @@ def evenorodd(x):
 a=int(input())
 evenorodd(a)
 
+
+#Factorial
+
+a=int(input())
+f=1
+if a<0:
+    print("factorial does not exist for negative number")
+elif a==0:
+    print("factorial exist 1")
+else:
+    for i in range(1,a+1):
+        f=f*i
+    print(f)
+    
+    
+    #LCM of two numbers
+    
+    def lcm(x,y,z):
+    if(x*z)%y==0:
+        print(x*z)
+    else:
+        lcm(x,y,z+1)
+a=int(input())
+b=int(input())
+lcm(a,b,1)
+
+
+#Decimal to Binary
+
+def convert(n):
+    if n>1:
+        convert(n//2)
+    print(n%2,end="")
+dec=int(input())
+convert(dec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     
