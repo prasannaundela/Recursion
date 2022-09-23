@@ -1,0 +1,40 @@
+#Binary equivalent of a number using recursion
+
+n=int(input())
+rem=" "
+while n>0:
+    rem+=str(n%2)
+    n=n//2
+print(rem[::-1])
+
+
+#Fibonacci Series
+
+n=int(input())
+a=0
+b=1
+count=2
+print(a,b,end=" ")
+while count<n:
+    c=a+b
+    print(c,end=" ")
+    a=b
+    b=c
+    count=count+1
+    
+    
+#Odd or Even
+
+def evenorodd(x):
+    if(x>0):
+        if (x%2==0):
+            print('Even!')
+        else:
+            print('odd!')
+a=int(input())
+evenorodd(a)
+
+    
+    
+    
+    
